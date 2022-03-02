@@ -1,6 +1,7 @@
 package com.alivepython.mobilebankingappusingphpapi.model;
 
 import com.alivepython.mobilebankingappusingphpapi.interfaces.WebService;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -12,7 +13,7 @@ public class MyRetrofit {
     public static Retrofit api;
     public static WebService service;
 
-    public static WebService getInstance(){
+    public static WebService getinstance(){
 
         if (service==null){
             if (api==null){
@@ -21,7 +22,7 @@ public class MyRetrofit {
                         .create();
 
                 api= new Retrofit.Builder()
-                        .baseUrl("https://alivepython.com/testapi/")
+                        .baseUrl("https://www.alivepython.com//testapi/")
                         .addConverterFactory(GsonConverterFactory.create(gson))
                         .build();
             }
