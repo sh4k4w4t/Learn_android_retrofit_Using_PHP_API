@@ -6,17 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
+    <GridLayout
+        android:id="@+id/homePageGridView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:columnCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/rechargeImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_test"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:id="@+id/cashOutImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_test"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/sendMoneyImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_test"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/historyImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_test"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/paymentImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_test"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/offerImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_test"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/chatSupportImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_test"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/notificationImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_test"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/accountSettingImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_test"
+            android:layout_margin="5dp" />
+
+    </GridLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

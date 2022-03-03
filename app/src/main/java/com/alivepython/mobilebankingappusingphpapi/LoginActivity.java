@@ -12,7 +12,9 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.alivepython.mobilebankingappusingphpapi.interfaces.WebService;
+import com.alivepython.mobilebankingappusingphpapi.model.DataController;
 import com.alivepython.mobilebankingappusingphpapi.model.MyRetrofit;
+import com.alivepython.mobilebankingappusingphpapi.model.UserModel;
 
 import java.io.IOException;
 
@@ -27,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     Button loginButton;
     ProgressBar loadingProgress;
     WebService service;
+    DataController dataController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,15 +46,11 @@ public class LoginActivity extends AppCompatActivity {
                 SendLoginRequest(PhoneNumberText.getText().toString(),PinNumberText.getText().toString());
             }
         });
-
-
-
-
     }
 
     private void SendLoginRequest(String phoneNumber, String pinNumber) {
         service= MyRetrofit.getinstance();
-        Call<ResponseBody> login=service.loginNow(phoneNumber,pinNumber);
+        /*Call<ResponseBody> login=service.loginNow(phoneNumber,pinNumber);
         login.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(@NonNull Call<ResponseBody> call, @NonNull Response<ResponseBody> response) {
@@ -82,6 +81,37 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Response failed.", Toast.LENGTH_SHORT).show();
 
             }
+        });*/
+
+        Call<UserModel> jsonTest = service.jsontest(phoneNumber,pinNumber);
+        jsonTest.enqueue(new Callback<UserModel>() {
+            @Override
+            public void onResponse(Call<UserModel> call, Response<UserModel> response) {
+                loadingProgress.setVisibility(View.GONE);
+                if (!response.isSuccessful()){
+                    return;
+                }
+                UserModel user= response.body();
+
+                if (user==null){
+                    Toast.makeText(getApplicationContext(), "User null", Toast.LENGTH_SHORT).show();
+                }
+                else if (user.getUserResponse()!=null && user.getUserResponse().equals("0")){
+                    Toast.makeText(getApplicationContext(), "Login failed", Toast.LENGTH_SHORT).show();
+                }
+                else if (user.getUserResponse()!=null && user.getUserResponse().equals("1")){
+                    dataController.setCurrentUser(user);
+
+                    Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    finish();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<UserModel> call, Throwable t) {
+
+            }
         });
 
     }
@@ -91,5 +121,6 @@ public class LoginActivity extends AppCompatActivity {
         PinNumberText =findViewById(R.id.editTextNumber);
         loginButton=findViewById(R.id.buttonLogin);
         loadingProgress=findViewById(R.id.progressBarLoading);
+        dataController= DataController.getInstance();
     }
 }

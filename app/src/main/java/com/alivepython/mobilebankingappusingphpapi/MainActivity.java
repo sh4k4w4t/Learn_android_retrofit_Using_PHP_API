@@ -18,8 +18,6 @@ import com.alivepython.mobilebankingappusingphpapi.databinding.ActivityMainBindi
 
 public class MainActivity extends AppCompatActivity {
 
-    View rootView;
-
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
