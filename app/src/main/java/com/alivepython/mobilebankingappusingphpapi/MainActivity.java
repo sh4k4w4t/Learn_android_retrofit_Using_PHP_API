@@ -5,6 +5,8 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.TextView;
 
+import com.alivepython.mobilebankingappusingphpapi.model.DataController;
+import com.alivepython.mobilebankingappusingphpapi.model.UserModel;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     ConstraintLayout layoutConstrain;
     TextView userName,userPhone,userBalance;
+    UserModel user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(binding.appBarMain.toolbar);
         initializedUI();
         setupInitializedUI();
+
+        user= DataController.getInstance().getCurrentUser();
+        if (user!=null){
+            userName.setText(user.getUserName());
+            userBalance.setText(user.getUserBalance()+" BDT");
+            userPhone.setText(user.getUserPhone());
+        }
 
         binding.appBarMain.fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show());
@@ -50,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupInitializedUI() {
+
 
     }
 
