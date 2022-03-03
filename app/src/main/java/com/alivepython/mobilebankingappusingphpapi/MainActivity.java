@@ -18,12 +18,15 @@ import com.alivepython.mobilebankingappusingphpapi.databinding.ActivityMainBindi
 
 public class MainActivity extends AppCompatActivity {
 
+    View rootView;
+
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
