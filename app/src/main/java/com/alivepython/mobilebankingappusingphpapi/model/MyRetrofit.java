@@ -22,7 +22,7 @@ public class MyRetrofit {
                         .create();
 
                 api= new Retrofit.Builder()
-                        .baseUrl("https://www.alivepython.com//testapi/")
+                        .baseUrl("https://www.alivepython.com/testapi/")
                         .addConverterFactory(GsonConverterFactory.create(gson))
                         .build();
             }
