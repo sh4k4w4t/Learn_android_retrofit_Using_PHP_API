@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         setSupportActionBar(binding.appBarMain.toolbar);
         initializedUI();
-        setupInitializedUI();
 
         user= DataController.getInstance().getCurrentUser();
         if (user!=null){
@@ -57,11 +56,6 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-    }
-
-    private void setupInitializedUI() {
-
-
     }
 
     private void initializedUI() {
