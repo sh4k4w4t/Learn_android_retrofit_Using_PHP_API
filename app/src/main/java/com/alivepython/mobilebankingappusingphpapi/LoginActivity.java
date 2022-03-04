@@ -1,6 +1,5 @@
 package com.alivepython.mobilebankingappusingphpapi;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -16,9 +15,6 @@ import com.alivepython.mobilebankingappusingphpapi.model.DataController;
 import com.alivepython.mobilebankingappusingphpapi.model.MyRetrofit;
 import com.alivepython.mobilebankingappusingphpapi.model.UserModel;
 
-import java.io.IOException;
-
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -49,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void SendLoginRequest(String phoneNumber, String pinNumber) {
-        service= MyRetrofit.getinstance();
+        service= MyRetrofit.getInstance();
         /*Call<ResponseBody> login=service.loginNow(phoneNumber,pinNumber);
         login.enqueue(new Callback<ResponseBody>() {
             @Override

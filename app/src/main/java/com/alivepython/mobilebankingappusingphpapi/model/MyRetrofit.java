@@ -13,7 +13,7 @@ public class MyRetrofit {
     public static Retrofit api;
     public static WebService service;
 
-    public static WebService getinstance(){
+    public static WebService getInstance(){
 
         if (service==null){
             if (api==null){
