@@ -33,8 +33,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.rechargeImageView:
                 RechargeImageClick();
                 break;
+
+            case R.id.cashOutImageView:
+                CashOutImageClick();
+                break;
         }
 
+    }
+
+    private void CashOutImageClick() {
+        Navigation.findNavController(rootView).navigate(R.id.action_nav_home_to_nav_cashOut);
     }
 
     private void RechargeImageClick() {

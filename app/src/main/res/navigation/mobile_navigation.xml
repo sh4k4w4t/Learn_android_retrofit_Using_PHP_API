@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_home_to_nav_recharge"
             app:destination="@id/nav_recharge" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_cashOut"
+            app:destination="@id/nav_cashOut" />
     </fragment>
 
     <fragment
@@ -32,5 +35,11 @@
         android:name="com.alivepython.mobilebankingappusingphpapi.ui.recharge.RechargeFragment"
         android:label="Recharge"
         tools:layout="@layout/fragment_recharge" />
+
+    <fragment
+        android:id="@+id/nav_cashOut"
+        android:name="com.alivepython.mobilebankingappusingphpapi.ui.cashout.CashOutFragment"
+        android:label="Cash out"
+        tools:layout="@layout/fragment_cashout" />
 
 </navigation>
