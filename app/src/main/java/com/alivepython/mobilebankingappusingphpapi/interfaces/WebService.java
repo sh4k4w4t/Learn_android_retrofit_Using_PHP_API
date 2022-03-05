@@ -27,5 +27,12 @@ public interface WebService {
                                    @Field("userPhone") String userPhone,
                                    @Field("userPin") String userPin);
 
+    @FormUrlEncoded
+    @POST("cashout.php")
+    Call<ResponseBody> cashOutNow(@Field("number") String number,
+                                   @Field("amount") String amount,
+                                   @Field("userPhone") String userPhone,
+                                   @Field("userPin") String userPin);
+
 
 }

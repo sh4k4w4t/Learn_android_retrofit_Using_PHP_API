@@ -47,7 +47,7 @@ public class CashOutFragment extends Fragment {
                 Toast.makeText(getActivity(), "Fill up all information", Toast.LENGTH_SHORT).show();
             }else {
                 loadingProgressBar.setVisibility(View.VISIBLE);
-                RechargeNow(agentNumber.getText().toString(), cashOutAmount.getText().toString());
+                CashOutNow(agentNumber.getText().toString(), cashOutAmount.getText().toString());
             }
         });
 
@@ -67,9 +67,9 @@ public class CashOutFragment extends Fragment {
         service= MyRetrofit.getInstance();
     }
 
-    private void RechargeNow(String number, String amount){
-        Call<ResponseBody> rechargeNow= service.rechargeNow(number,amount,user.getUserPhone(),user.getUserPin());
-        rechargeNow.enqueue(new Callback<ResponseBody>() {
+    private void CashOutNow(String number, String amount){
+        Call<ResponseBody> cashOut= service.cashOutNow(number,amount,user.getUserPhone(),user.getUserPin());
+        cashOut.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 loadingProgressBar.setVisibility(View.GONE);
