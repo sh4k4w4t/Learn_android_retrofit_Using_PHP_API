@@ -59,6 +59,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     }
 
     private void HistoryImageCLick() {
+        Navigation.findNavController(rootView).navigate(R.id.action_nav_home_to_nav_history);
     }
 
     private void CashOutImageClick() {

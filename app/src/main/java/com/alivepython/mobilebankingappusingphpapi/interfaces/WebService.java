@@ -1,6 +1,9 @@
 package com.alivepython.mobilebankingappusingphpapi.interfaces;
 
+import com.alivepython.mobilebankingappusingphpapi.model.History;
 import com.alivepython.mobilebankingappusingphpapi.model.UserModel;
+
+import java.util.List;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -35,8 +38,8 @@ public interface WebService {
                                    @Field("userPin") String userPin);
 
     @GET("history.php")
-    Call<ResponseBody> getHistoryList(@Query("number") String number,
-                                      @Query("pin") String pin);
+    Call<List<History>> getHistoryList(@Query("number") String number,
+                                       @Query("pin") String pin);
 
 
 }
