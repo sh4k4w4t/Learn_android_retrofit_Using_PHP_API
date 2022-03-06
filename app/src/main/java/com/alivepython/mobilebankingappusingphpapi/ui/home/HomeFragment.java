@@ -37,8 +37,28 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.cashOutImageView:
                 CashOutImageClick();
                 break;
+
+            case R.id.historyImageView:
+                historyImageCLick();
+                break;
+                
+
+
+
+
+            case R.id.sendMoneyImageView:
+            case R.id.paymentImageView:
+            case R.id.notificationImageView:
+            case R.id.accountSettingImageView:
+            case R.id.chatSupportImageView:
+            case R.id.offerImageView:
+                Toast.makeText(getActivity(), "Working...", Toast.LENGTH_SHORT).show();
+                break;
         }
 
+    }
+
+    private void historyImageCLick() {
     }
 
     private void CashOutImageClick() {
