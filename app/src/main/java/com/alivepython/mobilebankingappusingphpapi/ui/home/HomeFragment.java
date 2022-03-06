@@ -39,7 +39,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.historyImageView:
-                historyImageCLick();
+                HistoryImageCLick();
                 break;
                 
 
@@ -58,7 +58,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     }
 
-    private void historyImageCLick() {
+    private void HistoryImageCLick() {
     }
 
     private void CashOutImageClick() {
