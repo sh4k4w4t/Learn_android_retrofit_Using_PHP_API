@@ -34,5 +34,9 @@ public interface WebService {
                                    @Field("userPhone") String userPhone,
                                    @Field("userPin") String userPin);
 
+    @GET("history.php")
+    Call<ResponseBody> getHistoryList(@Query("number") String number,
+                                      @Query("pin") String pin);
+
 
 }
