@@ -20,63 +20,63 @@
             android:id="@+id/rechargeImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_test"
+            android:src="@drawable/ic_recharge"
             android:layout_margin="5dp"/>
 
         <ImageView
             android:id="@+id/cashOutImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_test"
+            android:src="@drawable/ic_cashout"
             android:layout_margin="5dp" />
 
         <ImageView
             android:id="@+id/sendMoneyImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_test"
+            android:src="@drawable/ic_send_money"
             android:layout_margin="5dp" />
 
         <ImageView
             android:id="@+id/historyImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_test"
+            android:src="@drawable/ic_history"
             android:layout_margin="5dp" />
 
         <ImageView
             android:id="@+id/paymentImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_test"
+            android:src="@drawable/ic_payment"
             android:layout_margin="5dp" />
 
         <ImageView
             android:id="@+id/offerImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_test"
+            android:src="@drawable/ic_offer"
             android:layout_margin="5dp" />
 
         <ImageView
             android:id="@+id/chatSupportImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_test"
+            android:src="@drawable/ic_chat"
             android:layout_margin="5dp" />
 
         <ImageView
             android:id="@+id/notificationImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_test"
+            android:src="@drawable/ic_notification"
             android:layout_margin="5dp" />
 
         <ImageView
             android:id="@+id/accountSettingImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_test"
+            android:src="@drawable/ic_setting"
             android:layout_margin="5dp" />
 
     </GridLayout>
