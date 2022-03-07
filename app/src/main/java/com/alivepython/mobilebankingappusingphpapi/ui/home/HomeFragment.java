@@ -1,5 +1,7 @@
 package com.alivepython.mobilebankingappusingphpapi.ui.home;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,6 +44,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 HistoryImageCLick();
                 break;
                 
+            case R.id.chatSupportImageView:
+                ChatImageClick();
+                break;
+                
 
 
 
@@ -50,11 +56,18 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.paymentImageView:
             case R.id.notificationImageView:
             case R.id.accountSettingImageView:
-            case R.id.chatSupportImageView:
             case R.id.offerImageView:
                 Toast.makeText(getActivity(), "Working...", Toast.LENGTH_SHORT).show();
                 break;
         }
+
+    }
+
+    private void ChatImageClick() {
+        String whatsAppUrl= "https://api.whatsapp.com/send?phone=0187953";
+        Intent intent= new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(whatsAppUrl));
+        startActivity(intent);
 
     }
 
