@@ -67,7 +67,7 @@ public class HistoryFragment extends Fragment {
                 }
 //                allHistory.clear();
                 allHistory=response.body();
-                Toast.makeText(getActivity(), "size: "+allHistory.size(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Total Item: "+allHistory.size(), Toast.LENGTH_SHORT).show();
                 adapter = new HistoryAdapter(allHistory);
                 recyclerView.setAdapter(adapter);
             }
