@@ -47,20 +47,23 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.chatSupportImageView:
                 ChatImageClick();
                 break;
-                
 
-
-
+            case R.id.accountSettingImageView:
+                AccountInfoImageClick();
+                break;
 
             case R.id.sendMoneyImageView:
             case R.id.paymentImageView:
             case R.id.notificationImageView:
-            case R.id.accountSettingImageView:
             case R.id.offerImageView:
                 Toast.makeText(getActivity(), "Working...", Toast.LENGTH_SHORT).show();
                 break;
         }
 
+    }
+
+    private void AccountInfoImageClick() {
+        Navigation.findNavController(rootView).navigate(R.id.action_nav_home_to_nav_accountInfo);
     }
 
     private void ChatImageClick() {
