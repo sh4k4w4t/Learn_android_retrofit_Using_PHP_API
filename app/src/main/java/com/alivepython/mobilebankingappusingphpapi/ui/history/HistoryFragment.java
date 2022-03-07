@@ -9,6 +9,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -73,7 +74,8 @@ public class HistoryFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<History>> call, Throwable t) {
-                Toast.makeText(getActivity(), "onFailure", Toast.LENGTH_SHORT).show();
+                Navigation.findNavController(rootView).navigate(R.id.action_nav_history_to_nav_home);
+                Toast.makeText(getActivity(), "Check your Internet", Toast.LENGTH_SHORT).show();
 
             }
         });
