@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(binding.appBarMain.toolbar);
         initializedUI();
 
+        navigationBarInfoChange();
+
         user= DataController.getInstance().getCurrentUser();
         if (user!=null){
             userName.setText(user.getUserName());
@@ -56,6 +58,18 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+    }
+
+    private void navigationBarInfoChange() {
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        View headerView = navigationView.getHeaderView(0);
+
+        TextView navUsername = headerView.findViewById(R.id.navigation_userName);
+        navUsername.setText("Unknown Person");
+
+        TextView navEmail= headerView.findViewById(R.id.navigation_userEmail);
+        navEmail.setText("Unknown@unkown.com");
+
     }
 
     private void initializedUI() {
