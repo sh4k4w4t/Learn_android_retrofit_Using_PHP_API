@@ -30,9 +30,11 @@ public class AccountInfo extends Fragment {
 
         userModel= DataController.getInstance().getCurrentUser();
 
-//        userTextView.setText(userModel.getUserName());
-//        phoneNumberTextView.setText(userModel.getUserPhone());
-//        balanceTextView.setText(userModel.getUserBalance());
+
+
+        userTextView.setText("User Name: "+userModel.getUserName());
+        phoneNumberTextView.setText("Phone Number: "+userModel.getUserPhone());
+        balanceTextView.setText("Balance: "+userModel.getUserBalance());
 
 
 
