@@ -1,5 +1,6 @@
 package com.alivepython.mobilebankingappusingphpapi.ui.accountInformation;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,7 @@ public class AccountInfo extends Fragment {
     TextView userTextView, phoneNumberTextView, balanceTextView;
     UserModel userModel;
 
+    @SuppressLint("SetTextI18n")
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
