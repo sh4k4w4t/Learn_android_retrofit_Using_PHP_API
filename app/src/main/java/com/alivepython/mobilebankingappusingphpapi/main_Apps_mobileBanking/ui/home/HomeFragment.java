@@ -18,7 +18,7 @@ import com.alivepython.mobilebankingappusingphpapi.R;
 public class HomeFragment extends Fragment implements View.OnClickListener {
     View rootView;
     ImageView rechargeImageView,cashOutImageView,sendMoneyImageView,historyImageView,paymentImageView,offerImageView,chatSupportImageView,notificationImageView,accountSettingImageView;
-    ImageView mineHistoryCheck,testMineGithubInfo;
+    ImageView mineHistoryCheck,testMineGithubInfo, testJsonPlaceholderAllModel;
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView=inflater.inflate(R.layout.fragment_home,container,false);
         serializedUI();
@@ -68,6 +68,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
             case R.id.testMineGithubInfo:
                 Navigation.findNavController(rootView).navigate(R.id.action_nav_home_to_nav_Test_Github);
+                break;
+
+            case R.id.testJsonPlaceholderAllModel:
+                Navigation.findNavController(rootView).navigate(R.id.action_nav_home_to_nav_jsonPlaceHolder_posts);
                 break;
         }
 
@@ -120,8 +124,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         mineHistoryCheck=rootView.findViewById(R.id.mineHistoryCheck);
         testMineGithubInfo=rootView.findViewById(R.id.testMineGithubInfo);
+        testJsonPlaceholderAllModel =rootView.findViewById(R.id.testJsonPlaceholderAllModel);
+
         mineHistoryCheck.setOnClickListener(this);
         testMineGithubInfo.setOnClickListener(this);
+        testJsonPlaceholderAllModel.setOnClickListener(this);
     }
 
     @Override

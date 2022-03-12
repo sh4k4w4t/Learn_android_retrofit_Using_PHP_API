@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_nav_home_to_nav_Test_Github"
             app:destination="@id/nav_Test_Github" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_jsonPlaceHolder_posts"
+            app:destination="@id/nav_jsonPlaceHolder_posts" />
     </fragment>
 
     <fragment
@@ -88,5 +91,11 @@
         android:name="com.alivepython.mobilebankingappusingphpapi.test_Mine_shakawat_json_From_Cpanel.GithubFragment"
         android:label="Github user Info"
         tools:layout="@layout/github_fragment" />
+
+    <fragment
+        android:id="@+id/nav_jsonPlaceHolder_posts"
+        android:name="com.alivepython.mobilebankingappusingphpapi.test_JsonPlaceHolder_bs_posts.Posts_Fragment"
+        android:label="Json placeholder POSTS"
+        tools:layout="@layout/fragment_posts" />
 
 </navigation>
