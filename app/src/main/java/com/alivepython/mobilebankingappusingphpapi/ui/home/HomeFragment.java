@@ -18,7 +18,7 @@ import com.alivepython.mobilebankingappusingphpapi.R;
 public class HomeFragment extends Fragment implements View.OnClickListener {
     View rootView;
     ImageView rechargeImageView,cashOutImageView,sendMoneyImageView,historyImageView,paymentImageView,offerImageView,chatSupportImageView,notificationImageView,accountSettingImageView;
-
+    ImageView mineHistoryCheck;
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView=inflater.inflate(R.layout.fragment_home,container,false);
         serializedUI();
@@ -50,6 +50,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
             case R.id.accountSettingImageView:
                 AccountInfoImageClick();
+                break;
+
+            case R.id.mineHistoryCheck:
+                Navigation.findNavController(rootView).navigate(R.id.action_nav_home_to_nav_mineCheckHistory);
                 break;
 
             case R.id.sendMoneyImageView:
@@ -106,6 +110,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         chatSupportImageView.setOnClickListener(this);
         notificationImageView.setOnClickListener(this);
         accountSettingImageView.setOnClickListener(this);
+
+        mineHistoryCheck=rootView.findViewById(R.id.mineHistoryCheck);
+        mineHistoryCheck.setOnClickListener(this);
     }
 
     @Override

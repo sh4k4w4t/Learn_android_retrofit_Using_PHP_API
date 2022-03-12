@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_nav_home_to_nav_accountInfo"
             app:destination="@id/nav_accountInfo" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_mineCheckHistory"
+            app:destination="@id/nav_mineCheckHistory" />
     </fragment>
 
     <fragment
@@ -69,5 +72,11 @@
         android:name="com.alivepython.mobilebankingappusingphpapi.ui.accountInformation.AccountInfo"
         android:label="User Account Info"
         tools:layout="@layout/fragment_account_info" />
+
+    <fragment
+        android:id="@+id/nav_mineCheckHistory"
+        android:name="com.alivepython.mobilebankingappusingphpapi.test_Mine_HistoryPhp.Mine_HistoryFragment"
+        android:label="Mine History Check"
+        tools:layout="@layout/fragment_mine_history" />
 
 </navigation>
