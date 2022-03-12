@@ -96,6 +96,14 @@
             android:layout_margin="15dp"
             android:padding="10dp"/>
 
+        <ImageView
+            android:id="@+id/testMineGithubInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test_mine_history"
+            android:layout_margin="15dp"
+            android:padding="10dp"/>
+
     </GridLayout>
 
 

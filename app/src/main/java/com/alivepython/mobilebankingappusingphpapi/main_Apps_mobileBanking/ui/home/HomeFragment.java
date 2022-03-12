@@ -18,7 +18,7 @@ import com.alivepython.mobilebankingappusingphpapi.R;
 public class HomeFragment extends Fragment implements View.OnClickListener {
     View rootView;
     ImageView rechargeImageView,cashOutImageView,sendMoneyImageView,historyImageView,paymentImageView,offerImageView,chatSupportImageView,notificationImageView,accountSettingImageView;
-    ImageView mineHistoryCheck;
+    ImageView mineHistoryCheck,testMineGithubInfo;
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView=inflater.inflate(R.layout.fragment_home,container,false);
         serializedUI();
@@ -52,15 +52,22 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 AccountInfoImageClick();
                 break;
 
-            case R.id.mineHistoryCheck:
-                Navigation.findNavController(rootView).navigate(R.id.action_nav_home_to_nav_mineCheckHistory);
-                break;
-
             case R.id.sendMoneyImageView:
             case R.id.paymentImageView:
             case R.id.notificationImageView:
             case R.id.offerImageView:
                 Toast.makeText(getActivity(), "Working...", Toast.LENGTH_SHORT).show();
+                break;
+
+
+
+
+            case R.id.mineHistoryCheck:
+                Navigation.findNavController(rootView).navigate(R.id.action_nav_home_to_nav_mineCheckHistory);
+                break;
+
+            case R.id.testMineGithubInfo:
+                Navigation.findNavController(rootView).navigate(R.id.action_nav_home_to_nav_Test_Github);
                 break;
         }
 
@@ -112,7 +119,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         accountSettingImageView.setOnClickListener(this);
 
         mineHistoryCheck=rootView.findViewById(R.id.mineHistoryCheck);
+        testMineGithubInfo=rootView.findViewById(R.id.testMineGithubInfo);
         mineHistoryCheck.setOnClickListener(this);
+        testMineGithubInfo.setOnClickListener(this);
     }
 
     @Override

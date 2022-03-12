@@ -29,7 +29,6 @@ public class Mine_HistoryFragment extends Fragment {
     RecyclerView recyclerView;
     Mine_adapter_for_recycleView adapter;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView= inflater.inflate(R.layout.fragment_mine_history, container, false);
@@ -40,9 +39,6 @@ public class Mine_HistoryFragment extends Fragment {
 
         mine_web_service= Mine_Retrofit.getMine_service();
         loadHistory();
-
-
-
 
         return rootView;
     }
