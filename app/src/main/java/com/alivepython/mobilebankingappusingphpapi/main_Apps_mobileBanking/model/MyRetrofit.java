@@ -1,6 +1,6 @@
-package com.alivepython.mobilebankingappusingphpapi.model;
+package com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model;
 
-import com.alivepython.mobilebankingappusingphpapi.interfaces.WebService;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.interfaces.WebService;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

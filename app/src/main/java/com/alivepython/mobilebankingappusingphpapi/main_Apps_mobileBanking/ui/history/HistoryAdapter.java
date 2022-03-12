@@ -1,4 +1,4 @@
-package com.alivepython.mobilebankingappusingphpapi.ui.history;
+package com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.ui.history;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.alivepython.mobilebankingappusingphpapi.R;
-import com.alivepython.mobilebankingappusingphpapi.model.History;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model.History;
 
 import java.util.List;
 

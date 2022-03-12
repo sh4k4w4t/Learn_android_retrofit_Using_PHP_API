@@ -1,7 +1,7 @@
-package com.alivepython.mobilebankingappusingphpapi.interfaces;
+package com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.interfaces;
 
-import com.alivepython.mobilebankingappusingphpapi.model.History;
-import com.alivepython.mobilebankingappusingphpapi.model.UserModel;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model.History;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model.UserModel;
 
 import java.util.List;
 

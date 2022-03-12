@@ -1,19 +1,14 @@
-package com.alivepython.mobilebankingappusingphpapi.ui.gallery;
+package com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.ui.gallery;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.alivepython.mobilebankingappusingphpapi.R;
-import com.alivepython.mobilebankingappusingphpapi.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment {
 

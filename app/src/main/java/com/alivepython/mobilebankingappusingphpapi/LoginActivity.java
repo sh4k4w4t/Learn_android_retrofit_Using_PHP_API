@@ -10,10 +10,10 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.alivepython.mobilebankingappusingphpapi.interfaces.WebService;
-import com.alivepython.mobilebankingappusingphpapi.model.DataController;
-import com.alivepython.mobilebankingappusingphpapi.model.MyRetrofit;
-import com.alivepython.mobilebankingappusingphpapi.model.UserModel;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.interfaces.WebService;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model.DataController;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model.MyRetrofit;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model.UserModel;
 
 import retrofit2.Call;
 import retrofit2.Callback;

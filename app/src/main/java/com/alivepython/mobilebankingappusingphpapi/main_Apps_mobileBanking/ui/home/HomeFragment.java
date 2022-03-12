@@ -1,4 +1,4 @@
-package com.alivepython.mobilebankingappusingphpapi.ui.home;
+package com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.ui.home;
 
 import android.content.Intent;
 import android.net.Uri;

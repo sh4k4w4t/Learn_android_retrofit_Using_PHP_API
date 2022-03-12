@@ -1,4 +1,4 @@
-package com.alivepython.mobilebankingappusingphpapi.ui.accountInformation;
+package com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.ui.accountInformation;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -12,8 +12,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.alivepython.mobilebankingappusingphpapi.R;
-import com.alivepython.mobilebankingappusingphpapi.model.DataController;
-import com.alivepython.mobilebankingappusingphpapi.model.UserModel;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model.DataController;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model.UserModel;
 
 public class AccountInfo extends Fragment {
     View rootView;

@@ -5,8 +5,8 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.TextView;
 
-import com.alivepython.mobilebankingappusingphpapi.model.DataController;
-import com.alivepython.mobilebankingappusingphpapi.model.UserModel;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model.DataController;
+import com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model.UserModel;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 

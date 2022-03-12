@@ -1,4 +1,4 @@
-package com.alivepython.mobilebankingappusingphpapi.model;
+package com.alivepython.mobilebankingappusingphpapi.main_Apps_mobileBanking.model;
 
 public class UserModel {
     String userName;

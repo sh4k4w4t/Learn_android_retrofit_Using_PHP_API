@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".main_Apps_mobileBanking.ui.home.HomeFragment">
 
     <GridLayout
         android:id="@+id/homePageGridView"
@@ -92,7 +92,7 @@
             android:id="@+id/mineHistoryCheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_setting"
+            android:src="@drawable/test_mine_history"
             android:layout_margin="15dp"
             android:padding="10dp"/>
 
