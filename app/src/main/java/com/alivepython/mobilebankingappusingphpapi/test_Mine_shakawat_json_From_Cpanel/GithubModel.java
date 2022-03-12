@@ -1,6 +1,5 @@
-package com.alivepython.mobilebankingappusingphpapi.test_Mine_githubAPI;
+package com.alivepython.mobilebankingappusingphpapi.test_Mine_shakawat_json_From_Cpanel;
 
-import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class GithubModel {

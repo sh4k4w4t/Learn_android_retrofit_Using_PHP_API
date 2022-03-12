@@ -85,7 +85,7 @@
 
     <fragment
         android:id="@+id/nav_Test_Github"
-        android:name="com.alivepython.mobilebankingappusingphpapi.test_Mine_githubAPI.GithubFragment"
+        android:name="com.alivepython.mobilebankingappusingphpapi.test_Mine_shakawat_json_From_Cpanel.GithubFragment"
         android:label="Github user Info"
         tools:layout="@layout/github_fragment" />
 

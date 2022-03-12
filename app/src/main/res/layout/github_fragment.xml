@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".test_Mine_githubAPI.GithubFragment">
+    tools:context=".test_Mine_shakawat_json_From_Cpanel.GithubFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
